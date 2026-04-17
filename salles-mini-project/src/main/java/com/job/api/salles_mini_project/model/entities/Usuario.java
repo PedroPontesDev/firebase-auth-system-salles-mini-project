@@ -23,6 +23,8 @@ public class Usuario {
 	
 	@Column(unique = true, nullable = false)
 	private String email;
+	
+	//Utilizar TipoUsuario ENum par fazer as regras de admin, user,etc.. de acordo com usuario logado
 
 	public Usuario(Long id, String firebaseUid, String name, String email) {
 		this.id = id;
